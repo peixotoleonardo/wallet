@@ -8,10 +8,14 @@
 </template>
 
 <script setup lang="ts">
-const menuItems = [
-  { title: 'Dashboard', path: '/', icon: 'dashboard' },
-  { title: 'Transações', path: '/transactions', icon: 'receipt_long' },
-  { title: 'Categorias', path: '/categories', icon: 'category' },
-  { title: 'Configurações', path: '/settings', icon: 'settings' }
-]
+
+import type { MenuItem } from '~/components/Sidebar/menu-item';
+
+const menuItems: MenuItem[] = [
+  {
+    title: 'Integrações',
+    path: '/integrations',
+    icon: 'integration_instructions'
+  }
+];
 </script> 
